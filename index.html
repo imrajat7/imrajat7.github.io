@@ -12,6 +12,8 @@
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>My Portfolio</title>
     <script src="js/script.js" async></script>
   </head>
@@ -72,9 +74,18 @@
       </div>
       <footer class="footer">
         <div class="footer-wrapper">
-          designed by rjt
+          designed with &nbsp;<span id="heart-symbol">&hearts;</span> &nbsp; by rjt
         </div>
       </footer>
+
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span>
+      </div>
     </div>
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
   </body>
 </html>
