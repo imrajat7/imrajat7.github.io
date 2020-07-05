@@ -6,18 +6,28 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background: url("../assets/background.jpg") center top;
+html {
+  scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+/* body::-webkit-scrollbar {
+    display: none;
+  } */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #45a29e;
+  border-radius: 10px;
 }
 
 #page-container {
   background-color: #ffffff;
   background: url("../assets/background.jpg") center top;
   background-size: cover;
+  width: 100%;
   /* background:  pink; */
 }
 
@@ -91,13 +101,12 @@ a.left:hover:before {
   color: #45a29e;
 }
 
-#first-slide-wrapper {
-  margin: 8% 4% 5% 4%;
+#first-section-wrapper {
+  padding: 5% 4% 5% 4%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  min-height: 80vh;
-  height: auto;
+  height: 100vh;
   transition-duration: 1000ms;
   /* background-color: aquamarine; */
 }
@@ -105,6 +114,7 @@ a.left:hover:before {
 .div-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding-top: 30px;
   margin: 10px;
@@ -152,13 +162,13 @@ a.left:hover:before {
   border-color: #45a29e;
 }
 
-i {
+.fafa i.fa {
   font-size: 30px !important;
   padding: 8px;
   color: #45a29e;
 }
 
-i:hover {
+.fafa i.fa:hover {
   color: #fff;
   transform: scale(1.1);
 }
@@ -188,8 +198,53 @@ i:hover {
   transform: translateY(-6%);
 }
 
-/* @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-  100% { transform: scale(1); }
-} */
+/* About Section */
+
+#about-section {
+  background-color: lightseagreen;
+}
+
+#second-section-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+#go-to-top-button-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 2%;
+}
+
+.fa-angle-up {
+  color: #fff;
+  font-size: 3vw;
+}
+
+.fa-angle-up:hover {
+  color: yellow;
+}
+
+@media (max-width: 860px) {
+  #first-slide-wrapper {
+    padding: 10% 4% 0% 4%;
+  }
+  .div-wrapper {
+    padding-top: 0;
+    margin: 0;
+  }
+  .hi-there-text {
+    color: #ffffff;
+    font-size: 8vw;
+    /* background-color: lightgreen; */
+  }
+  #app {
+    font-size: 5vw;
+  }
+  .typewriter {
+    width: 100%;
+  }
+  .first-slide-connect {
+    margin-top: 10%;
+  }
+}

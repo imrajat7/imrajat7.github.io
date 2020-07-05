@@ -24,7 +24,10 @@
         <nav>
           <ul class="nav_links">
             <li>
-              <a href="#">About</a>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about-section">About</a>
             </li>
             <li>
               <a href="#">Projects</a>
@@ -35,55 +38,70 @@
           </ul>
         </nav>
       </header>
-      <div id="first-slide-wrapper">
-        <div class="div-wrapper">
-          <img
-            src="assets/welcometocat-min.png"
-            alt="user-image"
-            id="user-image"
-          />
-        </div>
-        <div class="div-wrapper typewriter">
-          <h1 class="hi-there-text">Hi there!</h1>
-          <br />
-          <div id="app"></div>
-          <div class="first-slide-connect">
-            <span id="github_icon_span" class="fafa"
-              ><a href="https://github.com/imrajat7"
-                ><i class="fa fa-github"></i></a
-            ></span>
-            <span id="linkedin_icon_span" class="fafa"
-              ><a href="https://www.linkedin.com/in/imrajat7/"
-                ><i class="fa fa-linkedin"></i></a
-            ></span>
-            <span id="facebook_icon_span" class="fafa"
-              ><a href="https://www.facebook.com/imrajat77"
-                ><i class="fa fa-facebook"></i></a
-            ></span>
-            <span id="mail_icon_span" class="fafa"
-              ><a href="mailto:rajat110898@gmail.com"
-                ><i class="fa fa-envelope-o"></i></a
-            ></span>
-            <span id="twitter_icon_span" class="fafa"
-              ><a href="https://twitter.com/imrajat77"
-                ><i class="fa fa-twitter"></i></a
-            ></span>
-            <!-- <span id="instagram_icon_span" class="fafa"><a href="https://www.instagram.com/heyits_rajat/"><i class="fa fa-instagram"></i></a></span> -->
+      <section id="home-section">
+        <div id="first-section-wrapper">
+          <div class="div-wrapper">
+            <img
+              src="assets/welcometocat-min.png"
+              alt="user-image"
+              id="user-image"
+            />
+          </div>
+          <div class="div-wrapper typewriter">
+            <h1 class="hi-there-text">Hi there!</h1>
+            <br />
+            <div id="app"></div>
+            <div class="first-slide-connect">
+              <span id="github_icon_span" class="fafa"
+                ><a href="https://github.com/imrajat7"
+                  ><i class="fa fa-github"></i></a
+              ></span>
+              <span id="linkedin_icon_span" class="fafa"
+                ><a href="https://www.linkedin.com/in/imrajat7/"
+                  ><i class="fa fa-linkedin"></i></a
+              ></span>
+              <span id="facebook_icon_span" class="fafa"
+                ><a href="https://www.facebook.com/imrajat77"
+                  ><i class="fa fa-facebook"></i></a
+              ></span>
+              <span id="mail_icon_span" class="fafa"
+                ><a href="mailto:rajat110898@gmail.com"
+                  ><i class="fa fa-envelope-o"></i></a
+              ></span>
+              <span id="twitter_icon_span" class="fafa"
+                ><a href="https://twitter.com/imrajat77"
+                  ><i class="fa fa-twitter"></i></a
+              ></span>
+              <!-- <span id="instagram_icon_span" class="fafa"><a href="https://www.instagram.com/heyits_rajat/"><i class="fa fa-instagram"></i></a></span> -->
+            </div>
           </div>
         </div>
-      </div>
-      <footer class="footer">
-        <div class="footer-wrapper">
-          designed with &nbsp;<span id="heart-symbol">&hearts;</span> &nbsp; by rjt
-        </div>
-      </footer>
+      </section>
 
-      <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span>
+      <section id="about-section">
+        <div id="second-section-wrapper">
+          hello
+        </div>
+      </section>
+    </div>
+
+    <div id="go-to-top-button-container">
+      <span>
+        <a href="#home-section"><i class="fa fa-angle-up"></i></a>
+      </span>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        designed with &nbsp;<span id="heart-symbol">&hearts;</span> &nbsp; by
+        rjt
       </div>
+    </footer>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <script>
-      $(window).on("load",function(){
+      $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
       });
     </script>
