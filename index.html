@@ -13,7 +13,11 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/loader.css" rel="stylesheet" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"
+    ></script>
     <title>My Portfolio</title>
     <script src="js/script.js" async></script>
   </head>
@@ -27,7 +31,7 @@
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#about-section">About</a>
+              <a href="#skills-section">Skills</a>
             </li>
             <li>
               <a href="#">Projects</a>
@@ -78,9 +82,23 @@
         </div>
       </section>
 
-      <section id="about-section">
+      <section id="skills-section">
         <div id="second-section-wrapper">
-          hello
+          <div class="div-wrapper skills-text-wrapper">
+            <h1 id="skills-text">Skills</h1>
+          </div>
+          <div class="skills-section-wrapper">
+            <div class="div-wrapper skills-section-div">
+              <div class="chart" data-percent="80">HTML5</div>
+              <div class="chart" data-percent="30">CSS3</div>
+              <div class="chart" data-percent="60">SASS</div>
+              <div class="chart" data-percent="50">jQuery</div>
+              <div class="chart" data-percent="11">AngularJS</div>
+              <div class="chart" data-percent="20">BackboneJS</div>
+              <div class="chart" data-percent="30">NodeJS</div>
+              <div class="chart" data-percent="60">PHP</div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -100,7 +118,7 @@
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <script>
+    <script type="text/javascript">
       $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
       });
