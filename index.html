@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,6 +19,10 @@
       type="text/javascript"
       src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"
     ></script>
+    <!-- <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.17/jquery.scrollify.min.js"
+    ></script> -->
     <title>My Portfolio</title>
     <script src="js/script.js" async></script>
   </head>
@@ -34,15 +39,15 @@
               <a href="#skills-section">Skills</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects-section">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#">Contact Me</a>
             </li>
           </ul>
         </nav>
       </header>
-      <section id="home-section">
+      <section class="section" id="home-section">
         <div id="first-section-wrapper">
           <div class="div-wrapper">
             <img
@@ -82,7 +87,7 @@
         </div>
       </section>
 
-      <section id="skills-section">
+      <section class="section" id="skills-section">
         <div id="second-section-wrapper">
           <div class="div-wrapper skills-text-wrapper">
             <h1 id="skills-text">Skills</h1>
@@ -102,6 +107,121 @@
         </div>
       </section>
     </div>
+
+    <section class="section" id="projects-section">
+      <div id="projects-section-wrapper">
+        <div class="projects-text-div">
+          <h1 class="projects-text">Projects</h1>
+        </div>
+        <div class="div-wrapper projects-wrapper">
+          <ul class="cards">
+            <li class="cards-item">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=1j_RFA_M6J8jVeakXKzUkBKWFW71mQxv7"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="card-title">Ecom-filters</h2>
+                  <p class="card-text">
+                    Various filters such as brands,instock etc applied on large
+                    no of products stored in MonogDB. React and Material Ui is
+                    used for frontend. NodeJS and MonogDB is used in API.
+                  </p>
+                  <a
+                    href="http://ecom-filters.herokuapp.com/"
+                    target="_blank"
+                    class="hosted-links"
+                    >hosted app</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=17Yv03cbbdnC2zFl3ZpPTyljhYyqiXaVZ"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="card-title">Socialize</h2>
+                  <p class="card-text">
+                    Social Media Application with posting story, comments, and
+                    notification functionality. Firebase is used for backend.
+                    React and Material UI is used for frontend.
+                  </p>
+                  <a
+                    href="https://github.com/imrajat7/socialize-client"
+                    target="_blank"
+                    class="hosted-links"
+                    >visit github</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=1NW87wjfQDyuv5TbTstVUsgBukdoMjqf0"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="card-title">AllBus</h2>
+                  <p class="card-text">
+                    A Bus booking web app in which user can book buses between
+                    destination and Bus operator can add and check the bookings
+                    for thier buses. User can check the status of ticket.
+                  </p>
+                  <a
+                    href="https://allbus.now.sh"
+                    target="_blank"
+                    class="hosted-links"
+                    >hosted app</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=1xBTp4-MuhrktA7rZjdMkWFAHoOHK-Gcv"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="card-title">JusChat</h2>
+                  <p class="card-text">
+                    A web app implemented using SocketIO, React and NodeJS.
+                    Multiple users can join messages and can check members
+                    present in that group. User can send emojis while chatting.
+                  </p>
+                  <a
+                    href="https://jus-chat.netlify.app/"
+                    target="_blank"
+                    class="hosted-links"
+                    >hosted app</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <h3>
+                & check others projects on
+                <a
+                  href="https://github.com/imrajat7"
+                  target="_blank"
+                  style="text-decoration: underline;"
+                  ><h3>github</h3></a
+                >
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <div id="go-to-top-button-container">
       <span>

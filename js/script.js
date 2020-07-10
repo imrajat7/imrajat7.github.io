@@ -34,16 +34,32 @@ function myFunction(e) {
 
 let x;
 x = window.matchMedia("(max-width:700px)");
-window.onresize = function(){
-  if(window.innerWidth<=700)
-    x = window.matchMedia("(max-width:700px)");
-}
+window.onresize = function () {
+  if (window.innerWidth <= 700) x = window.matchMedia("(max-width:700px)");
+};
 myFunction(x);
-x.addEventListener("resize",myFunction);
+x.addEventListener("resize", myFunction);
 
 var typewriter = new Typewriter(app, {
   loop: true,
 });
+
+// if(!(/Android|webOS|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
+//   $.scrollify({
+//         section : ".section",
+//         sectionName : "section-name",
+//         interstitialSection : "",
+//         easing: "easeOutExpo",
+//         scrollSpeed: 200,
+//         offset : 0,
+//         scrollbars: true,
+//         standardScrollElements: "",
+//         setHeights: true,
+//         overflowScroll: true,
+//         updateHash: true,
+//         touchScroll:true
+//     });
+// }
 
 typewriter
   .typeString("Hello World!")
