@@ -334,7 +334,7 @@ a.left:hover:before {
   box-shadow: 0 30px 10px -10px rgba(11, 35, 22, 0.5);
 }
 
-img {
+.project-image {
   height: auto;
   width: 100%;
   vertical-align: middle;
