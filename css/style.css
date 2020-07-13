@@ -336,7 +336,7 @@ a.left:hover:before {
 
 img {
   height: auto;
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
   opacity: 0.9;
 }
