@@ -31,22 +31,24 @@
     <div id="page-container">
       <header class="nav-bar">
         <a href="#" class="my_logo left"><h2>रजत</h2></a>
-        <nav>
-          <ul class="nav_links">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#skills-section">Skills</a>
-            </li>
-            <li>
-              <a href="#projects-section">Projects</a>
-            </li>
-            <li>
-              <a href="#contact-me-section">Contact Me</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="nav_links" id="nav_links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#skills-section">Skills</a>
+          </li>
+          <li>
+            <a href="#projects-section">Projects</a>
+          </li>
+          <li>
+            <a href="#contact-me-section">Contact Me</a>
+          </li>
+        </ul>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
       </header>
       <section class="section" id="home-section">
         <div id="home-section-wrapper">
@@ -57,7 +59,7 @@
             <h1 class="hi-there-text">Hi.</h1>
             <br />
             <div id="app"></div>
-            <div class="first-slide-connect">
+            <!-- <div class="first-slide-connect">
               <span id="github_icon_span" class="fafa"
                 ><a href="https://github.com/imrajat7"
                   ><i class="fa fa-github"></i></a
@@ -82,7 +84,7 @@
                 ><a href="https://www.instagram.com/heyits_rajat/"
                   ><i class="fa fa-instagram"></i></a
               ></span>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -276,7 +278,7 @@
 
     <div id="go-to-top-button-container">
       <span>
-        <a href="#home-section"><i class="fa fa-angle-up"></i></a>
+        <a href="#"><i class="fa fa-angle-up"></i></a>
       </span>
     </div>
 
@@ -292,6 +294,22 @@
     <script type="text/javascript">
       $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
+      });
+
+      let toggler = document.getElementById("check");
+      let navBar = document.getElementById("nav_links");
+      toggler.addEventListener("click", () => {
+        if (toggler.checked) {
+          navBar.style.left = "0%";
+        } else {
+          navBar.style.left = "-100%";
+        }
+      });
+      navBar.addEventListener("click", () => {
+        if (toggler.checked) {
+          navBar.style.left = "-100%";
+          toggler.checked = false;
+        }
       });
     </script>
   </body>

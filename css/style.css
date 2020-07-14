@@ -101,6 +101,18 @@ a.left:hover:before {
   color: #45a29e;
 }
 
+.checkbtn {
+  font-size: 22px;
+  color: #edf0f1;
+  cursor: pointer;
+  display: none;
+  /* background-color: khaki; */
+}
+
+#check {
+  display: none;
+}
+
 #home-section {
   background-color: #2f3e46;
   /* background: linear-gradient(90deg, #185a9d, #43cea2); */
@@ -343,7 +355,6 @@ a.left:hover:before {
 
 .card-image {
   background-color: black;
-  z-index: 9999;
 }
 
 .card-content {
@@ -482,8 +493,39 @@ a.left:hover:before {
 }
 
 @media (max-width: 860px) {
+  .checkbtn {
+    display: block;
+  }
+  .nav_links {
+    top: 0%;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    left: -100%;
+    width: 60%;
+    right: 0;
+    height: 100vh;
+    background-color: #777;
+    transition: all 0.5s;
+    z-index: 9999;
+  }
+  .nav_links li {
+    display: block;
+  }
+  .nav_links li a {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 860px) {
   #first-slide-wrapper {
     padding: 10% 4% 0% 4%;
+  }
+  #user-image {
+    width: 100%;
   }
   .div-wrapper {
     padding-top: 30px;
@@ -508,5 +550,15 @@ a.left:hover:before {
   .projects-text {
     font-size: 7vw;
     margin-top: 7vw;
+  }
+  #go-to-top-button-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 4%;
+  }
+  .fa-angle-up {
+    color: #fff;
+    font-size: 8vw;
   }
 }
