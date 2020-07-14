@@ -106,6 +106,7 @@ a.left:hover:before {
   color: #edf0f1;
   cursor: pointer;
   display: none;
+  z-index: 99999999;
   /* background-color: khaki; */
 }
 
@@ -502,10 +503,10 @@ a.left:hover:before {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     left: -100%;
-    width: 60%;
+    width: 100%;
     right: 0;
     height: 100vh;
     background-color: #777;
@@ -514,9 +515,15 @@ a.left:hover:before {
   }
   .nav_links li {
     display: block;
+    min-width: 80%;
+    background-color: gray;
+    margin: 5px;
   }
   .nav_links li a {
+    display: block;
     font-size: 5vw;
+    padding: 35px;
+    /* background-color: greenyellow; */
   }
 }
 
