@@ -311,6 +311,13 @@
           toggler.checked = false;
         }
       });
+
+      window.addEventListener("scroll", () => {
+        if (toggler.checked) {
+          navBar.style.left = "-100%";
+          toggler.checked = false;
+        }
+      });
     </script>
   </body>
 </html>

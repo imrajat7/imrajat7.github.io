@@ -24,11 +24,7 @@ body::-webkit-scrollbar {
 } */
 
 #page-container {
-  /* background-color: #ffffff; */
-  /* background: url("../assets/background.jpg") center top; */
-  /* background-size: cover; */
   width: 100%;
-  /* background:  pink; */
 }
 
 li,
