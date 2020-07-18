@@ -78,6 +78,7 @@ button {
 
 a.left {
   position: relative;
+  z-index: 99999;
 }
 
 a.left:before {
@@ -115,7 +116,7 @@ a.left:hover:before {
 }
 
 #home-section {
-  background-color: #475d69;
+  background-color: #2f3e46;
   /* background: linear-gradient(90deg, #185a9d, #43cea2); */
 }
 
@@ -501,7 +502,6 @@ a.left:hover:before {
     top: 0%;
     position: fixed;
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -509,20 +509,20 @@ a.left:hover:before {
     width: 100%;
     right: 0;
     height: 100vh;
-    background-color: #777;
     transition: all 0.5s;
     z-index: 9999;
+    backdrop-filter: blur(7px);
   }
   .nav_links li {
     display: block;
-    min-width: 80%;
-    background-color: gray;
+    width: 100%;
     margin: 5px;
   }
   .nav_links li a {
     display: block;
-    font-size: 5vw;
-    padding: 35px;
+    font-size: 6vw;
+    text-align: right;
+    padding: 30px;
     /* background-color: greenyellow; */
   }
 }
