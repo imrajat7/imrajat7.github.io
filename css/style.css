@@ -498,7 +498,6 @@ a.left:hover:before {
     top: 0%;
     position: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     left: -100%;
@@ -510,6 +509,7 @@ a.left:hover:before {
     backdrop-filter: blur(7px);
   }
   .nav_links li {
+    transform: translateY(-25%);
     display: block;
     width: 100%;
     margin: 5px;
@@ -520,6 +520,26 @@ a.left:hover:before {
     text-align: right;
     padding: 30px;
     /* background-color: greenyellow; */
+  }
+  @-moz-document url-prefix() {
+    .nav_links {
+      background: #555;
+      opacity: 0.9;
+    }
+    .nav_links li a {
+      color: white;
+    }
+  }
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+      .nav_links {
+        background: #555;
+        opacity: 0.9;
+      }
+      .nav_links li a {
+        color: white;
+      }
+    }
   }
 }
 
