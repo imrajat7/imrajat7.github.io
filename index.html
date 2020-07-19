@@ -16,10 +16,6 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/loader.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"
-    ></script>
     <!-- <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.17/jquery.scrollify.min.js"
@@ -94,16 +90,32 @@
           <div class="div-wrapper skills-text-wrapper">
             <h1 id="skills-text">Skills</h1>
           </div>
-          <div class="skills-section-wrapper">
-            <div class="div-wrapper skills-section-div">
-              <div class="chart" data-percent="80">HTML5</div>
-              <div class="chart" data-percent="30">CSS3</div>
-              <div class="chart" data-percent="60">SASS</div>
-              <div class="chart" data-percent="50">jQuery</div>
-              <div class="chart" data-percent="11">AngularJS</div>
-              <div class="chart" data-percent="20">BackboneJS</div>
-              <div class="chart" data-percent="30">NodeJS</div>
-              <div class="chart" data-percent="60">PHP</div>
+          <div class="skills-section-wrapper" id="skills-section-wrapper">
+            <div class="skills-section-div">
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/c++-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/html-5-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/css3-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/javascript-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/react-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/nodejs-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/mongodb-100.png" />
+              </div>
+              <div class="skill-outer-div">
+                <img src="/assets/Favorites/android-100.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -298,6 +310,9 @@
 
       let toggler = document.getElementById("check");
       let navBar = document.getElementById("nav_links");
+      let skillsSectionWrapper = document.getElementById(
+        "skills-section-wrapper"
+      );
       toggler.addEventListener("click", () => {
         if (toggler.checked) {
           navBar.style.left = "0%";

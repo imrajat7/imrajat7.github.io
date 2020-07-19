@@ -236,11 +236,6 @@ a.left:hover:before {
   /* background-color: tomato; */
 }
 
-.skills-text-wrapper {
-  /* background-color: tomato; */
-  width: 300px;
-}
-
 #skills-text {
   font-size: 7vw;
   color: #cad2c5;
@@ -250,8 +245,9 @@ a.left:hover:before {
 .skills-section-wrapper {
   width: 60%;
   height: auto;
-  background-color: #000;
+  background-color: #f5f5f5;
   margin: 20px;
+  padding: 4%;
   border-radius: 15px;
   box-shadow: 0 10px 10px 0 rgba(11, 35, 22, 0.5);
   transition: all 0.4s ease-in-out;
@@ -270,18 +266,11 @@ a.left:hover:before {
   flex-wrap: wrap;
 }
 
-.chart {
-  position: relative;
-  display: inline-block;
-  margin: 10px 5px;
-  color: #999;
-  font-size: 14px;
-  text-align: center;
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
+.skill-outer-div {
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Projects Page */
@@ -517,7 +506,9 @@ a.left:hover:before {
   .nav_links li a {
     display: block;
     font-size: 6vw;
+    color: #fff;
     text-align: right;
+    text-shadow: 2px 2px 8px black;
     padding: 30px;
     /* background-color: greenyellow; */
   }
@@ -567,9 +558,15 @@ a.left:hover:before {
   .first-slide-connect {
     margin-top: 6%;
   }
-  .skills-section-wrapper {
-    width: 90%;
+
+  #second-section-wrapper {
+    padding-bottom: 5vh;
   }
+
+  .skills-section-wrapper {
+    width: 80%;
+  }
+
   .projects-text {
     font-size: 7vw;
     margin-top: 7vw;
