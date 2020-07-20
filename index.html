@@ -16,12 +16,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/loader.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.17/jquery.scrollify.min.js"
     ></script> -->
-    <title>My Portfolio</title>
+    <title>Rajat's Portfolio</title>
     <script src="js/script.js" async></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <div id="page-container">
@@ -49,10 +51,10 @@
       <section class="section" id="home-section">
         <div id="home-section-wrapper">
           <div class="div-wrapper">
-            <img src="assets/rajat.png" alt="user-image" id="user-image" />
+            <img src="assets/rajat.png" alt="user-image" id="user-image" data-aos="fade-up" />
           </div>
           <div class="div-wrapper typewriter">
-            <h1 class="hi-there-text">Hi.</h1>
+            <h1 class="hi-there-text" data-aos="zoom-in">Hi.</h1>
             <br />
             <div id="app"></div>
             <!-- <div class="first-slide-connect">
@@ -87,10 +89,10 @@
 
       <section class="section" id="skills-section">
         <div id="second-section-wrapper">
-          <div class="div-wrapper skills-text-wrapper">
+          <div class="div-wrapper skills-text-wrapper" data-aos="flip-left">
             <h1 id="skills-text">Skills</h1>
           </div>
-          <div class="skills-section-wrapper" id="skills-section-wrapper">
+          <div class="skills-section-wrapper" id="skills-section-wrapper" data-aos="zoom-in">
             <div class="skills-section-div">
               <div class="skill-outer-div">
                 <img src="/assets/Favorites/c++-100.png" />
@@ -124,13 +126,13 @@
 
     <section class="section" id="projects-section">
       <div class="projects-section-wrapper">
-        <div class="projects-text-div">
+        <div class="projects-text-div" data-aos="flip-up">
           <h1 class="projects-text">Projects</h1>
         </div>
         <div class="div-wrapper projects-wrapper">
           <ul class="cards">
             <li class="cards-item">
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="card-image">
                   <img
                     src="/assets/ecom-filters.png"
@@ -155,7 +157,7 @@
               </div>
             </li>
             <li class="cards-item">
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="card-image">
                   <img
                     src="/assets/socialize.png"
@@ -179,7 +181,7 @@
                 </div>
               </div>
             </li>
-            <li class="cards-item">
+            <li class="cards-item" data-aos="fade-up">
               <div class="card">
                 <div class="card-image">
                   <img
@@ -204,7 +206,7 @@
                 </div>
               </div>
             </li>
-            <li class="cards-item">
+            <li class="cards-item" data-aos="fade-up">
               <div class="card">
                 <div class="card-image">
                   <img
@@ -247,7 +249,7 @@
 
     <section id="contact-me-section">
       <div class="contact-me-section-wrapper">
-        <h1 class="contact-me-text">Contact me</h1>
+        <h1 class="contact-me-text" data-aos="flip-left">Contact me</h1>
         <p>
           get in touch with me -><br /><a
             id="contact-email"
@@ -304,6 +306,8 @@
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <script type="text/javascript">
+      AOS.init();
+
       $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
       });

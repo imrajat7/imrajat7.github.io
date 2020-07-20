@@ -267,7 +267,7 @@ a.left:hover:before {
 }
 
 .skill-outer-div {
-  padding: 4%;
+  padding: 4% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,7 +302,7 @@ a.left:hover:before {
   width: 90%;
   /* background-color: orange; */
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 20px;
 }
 
@@ -566,9 +566,16 @@ a.left:hover:before {
   .skills-section-wrapper {
     width: 80%;
   }
+  .projects-wrapper {
+    width: 100%;
+  }
+
+  #skills-text {
+    font-size: 8vw;
+  }
 
   .projects-text {
-    font-size: 7vw;
+    font-size: 8vw;
     margin-top: 7vw;
   }
   #go-to-top-button-container {
