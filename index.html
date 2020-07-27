@@ -62,6 +62,12 @@
             <h1 class="hi-there-text">Hi.</h1>
             <br />
             <div id="app"></div>
+            <p style="text-align: center; width: 100%; padding: 5%;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aspernatur beatae quasi aliquid corporis quibusdam aliquam animi
+              consequuntur, odit saepe sunt maxime rerum eius itaque quod
+              delectus hic deserunt officia tempore?
+            </p>
             <!-- <div class="first-slide-connect">
               <span id="github_icon_span" class="fafa"
                 ><a href="https://github.com/imrajat7"
@@ -270,7 +276,7 @@
           <p>Or find me on</p>
           <ul class="contact-social-icons-list">
             <li>
-              <a href=""
+              <a href="https://www.linkedin.com/in/imrajat7/"
                 ><li><i class="fa fa-codepen"></i> CodePen</li></a
               >
             </li>
@@ -308,7 +314,8 @@
     <footer class="footer">
       <div class="footer-wrapper">
         designed with &nbsp;<span id="heart-symbol">&hearts;</span> &nbsp; by
-        rjt
+        &nbsp;
+        <a href="https://github.com/imrajat7" target="__blank">rjt</a>
       </div>
     </footer>
     <div class="loader-wrapper">
@@ -316,6 +323,17 @@
     </div>
     <script type="text/javascript">
       AOS.init();
+
+      let scrollToTopButton = document.getElementById(
+        "go-to-top-button-container"
+      );
+
+      let y = window.scrollY;
+      if (y > 0) {
+        scrollToTopButton.className = "show";
+      } else {
+        scrollToTopButton.className = "hide";
+      }
 
       $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
@@ -340,7 +358,13 @@
         }
       });
 
-      window.addEventListener("scroll", () => {
+      window.addEventListener("scroll", (e) => {
+        let y = window.scrollY;
+        if (y > 0) {
+          scrollToTopButton.className = "show";
+        } else {
+          scrollToTopButton.className = "hide";
+        }
         if (toggler.checked) {
           navBar.style.left = "-100%";
           toggler.checked = false;

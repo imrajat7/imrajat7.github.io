@@ -416,6 +416,10 @@ a.left:hover:before {
   font-weight: 600;
 }
 
+.footer-wrapper a{
+
+}
+
 .contact-social-icons p {
   margin-top: 14px;
   text-align: center;
@@ -441,6 +445,17 @@ a.left:hover:before {
   right: 0;
   bottom: 0;
   margin: 2%;
+  transition: all 0.4s ease-in-out;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+.hide {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .fa-angle-up {
