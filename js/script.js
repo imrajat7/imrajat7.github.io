@@ -25,10 +25,11 @@ var typewriter = new Typewriter(app, {
 //     });
 // }
 
+// .typeString("Hello World!")
+//   .pauseFor(2000)
+//   .deleteAll()
+
 typewriter
-  .typeString("Hello World!")
-  .pauseFor(2000)
-  .deleteAll()
   .typeString("I am a <strong>Computer Enthusiast.</strong>")
   .pauseFor(2000)
   .deleteChars(20)
